@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire Pizza</title>
+    <script src="check.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+    <h1 id="Formulaire Pizza"></h1>
+     <fieldset>
+        <legend>IDENTIFICATION</legend>
+            <div>
+                <label for="user">Utilisateur </label>
+                </br>
+                <input type="text" name="user" id="user" >
+                <FONT color="red"> <h6>Min: 10 - Max 20 !</h6></FONT>
+                </div>
+            <div >
+                </br>
+                <label for="pass">Mot de passe </label>
+                </br>
+                <input type="pass" name="pass" id="pass" >
+                <FONT color="red">   <h6>Entre 5 et 10 caractères!</h6></FONT>
+            </div>
+        </fieldset>
+    
+    <form>
+        <fieldset>
+          <legend>Commande</legend>
+      <div>
+          <input type="radio" id="small" name="size" value="small">
+          <label for="small">S</label>
+      
+          <input type="radio" id="medium" name="size"  value="medium">
+          <label for="medium">M</label>
+      
+          <input type="radio" id="large" name="size"  value="large">
+          <label for="large">L</label>
+
+          <input type="radio" id="big" name="size"  value="big">
+          <label for="big">XXL</label>
+          <p id="err-size" class="error"></p>
+         
+        </div>
+    </br>
+        <div>
+          <legend>Ingrédients</legend>
+          <input type="checkbox" id="Tomate" name="ingredients">
+          <label for="Tomate">Tomate</label>
+          <input type="checkbox" id="Oeuf" name="ingredients">
+          <label for="Oeuf">Oeuf</label>
+          <input type="checkbox" id="Mozarella" name="ingredients">
+          <label for="Mozarella">Mozarella</label>
+          <input type="checkbox" id="Jambon" name="ingredients">
+          <label for="Jambon">Jambon</label>
+          <FONT color="red">   <h6>SVP au moins 3 ingrédients !</h6></FONT>
+        </div>
+         </br>
+       <div>
+          <p>
+        <select name="payment" id="payment" >
+             <option value =""><FONT color="red"> SVP, choisissez un mode de paiement</FONT></option>
+            <option value="espece">Espèce</option>
+            <option value="espece">Carte bancaire</option>
+            <option value="espece">Ticket restaurant</option>
+        </select>
+        <FONT color="red">   <h6>SVP saisissez un moyen de paiement!</h6></FONT>
+    </p>
+    <p id="err-payment" class= "error"></p>
+    </div>
+        </fieldset>
+      </form>
+    </br>
+        <div>
+            <p><input id="bt-check" type="button" value= "bouton"></p>
+
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
